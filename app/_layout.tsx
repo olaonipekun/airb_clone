@@ -20,8 +20,23 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    ...FontAwesome.font,
+    'mon': require('../assets/fonts/Montserrat-Regular.ttf'),
+    'mon-sb': require('../assets/fonts/Montserrat-SemiBold.ttf'),
+    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf'),
+    'mon-bl': require('../assets/fonts/Montserrat-Black.ttf'),
+    'mon-bli': require('../assets/fonts/Montserrat-BlackItalic.ttf'),
+    'mon-eb': require('../assets/fonts/Montserrat-ExtraBold.ttf'),
+    'mon-ebi': require('../assets/fonts/Montserrat-ExtraBoldItalic.ttf'),
+    'mon-el': require('../assets/fonts/Montserrat-ExtraLight.ttf'),
+    'mon-eli': require('../assets/fonts/Montserrat-ExtraLightItalic.ttf'),
+    'mon-i': require('../assets/fonts/Montserrat-Italic.ttf'),
+    'mon-l': require('../assets/fonts/Montserrat-Light.ttf'),
+    'mon-li': require('../assets/fonts/Montserrat-LightItalic.ttf'),
+    'mon-sbi': require('../assets/fonts/Montserrat-SemiBoldItalic.ttf'),
+    'mon-t': require('../assets/fonts/Montserrat-Thin.ttf'),
+    'mon-ti': require('../assets/fonts/Montserrat-ThinItalic.ttf'),
+
+    
   });
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
