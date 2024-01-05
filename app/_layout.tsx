@@ -20,10 +20,9 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    'mon': require('../assets/fonts/Montserrat-Regular.ttf'),
-    'mon-sb': require('../assets/fonts/Montserrat-SemiBold.ttf'),
-    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf'),
     'mon-bl': require('../assets/fonts/Montserrat-Black.ttf'),
+    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf'),
+    'mon-sb': require('../assets/fonts/Montserrat-SemiBold.ttf'),
     'mon-bli': require('../assets/fonts/Montserrat-BlackItalic.ttf'),
     'mon-eb': require('../assets/fonts/Montserrat-ExtraBold.ttf'),
     'mon-ebi': require('../assets/fonts/Montserrat-ExtraBoldItalic.ttf'),
@@ -34,9 +33,7 @@ export default function RootLayout() {
     'mon-li': require('../assets/fonts/Montserrat-LightItalic.ttf'),
     'mon-sbi': require('../assets/fonts/Montserrat-SemiBoldItalic.ttf'),
     'mon-t': require('../assets/fonts/Montserrat-Thin.ttf'),
-    'mon-ti': require('../assets/fonts/Montserrat-ThinItalic.ttf'),
-
-    
+    'mon-ti': require('../assets/fonts/Montserrat-ThinItalic.ttf')    
   });
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
@@ -64,7 +61,6 @@ function RootLayoutNav() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
       </Stack>
     </ThemeProvider>
   );
