@@ -6,13 +6,13 @@ const Page = () => {
   return (
     <View>
       <Link href={"/(modals)/login"}>
-        Login
+        <Text> Login </Text>
       </Link>
       <Link href={"/(modals)/booking"}>
-        Book
+        <Text> Book </Text>
       </Link>
       <Link href={"/listing/1337"}>
-        Listing Details
+        <Text> Listing Details </Text>
       </Link>
     </View>
   )
