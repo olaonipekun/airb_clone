@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@clerk/clerk-expo": "^0.19.27",
+    "@clerk/clerk-js": "^4.68.2",
     "@expo/vector-icons": "^13.0.0",
     "@react-navigation/native": "^6.0.2",
     "expo": "~49.0.15",

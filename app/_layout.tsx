@@ -3,7 +3,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack, useRouter } from 'expo-router';
 import { useEffect } from 'react';
-import { useColorScheme } from 'react-native';
+// import { useColorScheme } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import * as SecureStore from 'expo-secure-store';
 import { ClerkProvider, useAuth } from '@clerk/clerk-expo';
@@ -26,7 +26,7 @@ const tokenCache = {
       return;
     }
   },
-}
+};
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -83,7 +83,7 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
-  const colorScheme = useColorScheme();
+  // const colorScheme = useColorScheme();
   const router = useRouter();
   const {isLoaded, isSignedIn} = useAuth();
 
@@ -107,7 +107,7 @@ function RootLayoutNav() {
           presentation: 'modal',
           headerLeft: ()=> (
             <TouchableOpacity onPress={()=> router.back()}>
-              <Ionicons name='close-outline' size={28}  />
+              <Ionicons name='close-outline'  />
             </TouchableOpacity>
           )
         }}
@@ -120,7 +120,7 @@ function RootLayoutNav() {
           animation: 'fade',
           headerLeft: ()=> (
             <TouchableOpacity onPress={()=> router.back()}>
-              <Ionicons name='close-outline' size={28}  />
+              <Ionicons name='close-outline' />
             </TouchableOpacity>
           )
         }}/>
